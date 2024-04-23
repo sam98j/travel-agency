@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+/* hero section */
+.hero-section::before {
+  content: '';
+  display: block;
+  /* height: 100dvh; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+/* header svg */
+.hero-section svg {
+  color: white;
+}
+/* hero section slider */
+.slider {
+  height: 50dvh;
+  width: 100%;
+}
+/* slider image */
+.slider img {
+  height: 100%;
+  width: 100%;
+}

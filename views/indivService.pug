@@ -1,0 +1,16 @@
+extends layout 
+block content 
+  //- navbar
+  include navbar
+  //- breadcrumb
+  //- service image
+  div(class='service-container p-5')
+    include breadcrumb 
+    //- service image
+    div(class='w-full mt-5')
+      img(src=service.imgUrl, alt="", srcset="")
+    //- service title
+    h1(class='my-10 text-xl font-bold') #{service.name}
+    //- body
+    p() #{service.disc}
+  include footer 

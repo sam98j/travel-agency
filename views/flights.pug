@@ -1,0 +1,12 @@
+extends layout
+block content
+  include navbar
+  div(class='pt-5 px-5')
+    include breadcrumb
+    //- service items
+    each dist in service.dists 
+      //- dist name
+      h1(class='text-xl font-bold mt-10 mb-5') #{dist.dist}
+      div(class='flex flex-wrap gap-5')
+        each item in dist.visaList
+          include service-card
