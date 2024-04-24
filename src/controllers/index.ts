@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import { flights, sea, visa } from '../services/visa';
+
 // nav links
 const navLinks = [
   { url: '/', title: 'الصفحة الرئسية' },
