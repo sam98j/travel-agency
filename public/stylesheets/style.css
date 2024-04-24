@@ -1298,6 +1298,20 @@ video {
     width: 25%;
   }
 
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .lg\:min-w-fit {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+
+  .lg\:flex-grow {
+    flex-grow: 1;
+  }
+
   .lg\:items-start {
     align-items: flex-start;
   }
@@ -1305,6 +1319,24 @@ video {
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 

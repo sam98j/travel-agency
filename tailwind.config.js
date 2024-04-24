@@ -1,7 +1,7 @@
 'use strict';
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/views/*.pug'],
+  content: ['./views/*.pug'],
   mode: 'jit',
   // These paths are just examples, customize them to match your project structure
   theme: {

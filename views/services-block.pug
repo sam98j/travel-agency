@@ -3,13 +3,13 @@ section(class='my-5')
   each service in services
     div(class='services-block flex flex-col')
       //- header
-      div(class='flex items-center w-full mb-3 mt-10')
-        h1(class='flex-grow text-xl') #{service.title}
-        a(href=service.url class='flex justify-end items-center')
+      div(class='flex items-center w-full mb-3 mt-10 px-5 lg:px-20')
+        h1(class='flex-grow text-xl font-bold') #{service.title}
+        a(href=service.url class='flex justify-end items-center lg:text-lg')
           span عرض الكل
           img(src="/svg/arrow.svg", alt="", srcset="" class='w-5')
       //- body  
-      div(class='flex gap-2 overflow-x-hidden')
+      div(class='flex gap-2 overflow-x-hidden p-5 lg:px-20 lg:pt-10 lg:pb-20')
         each dist in service.dists.slice(0, 4) 
           each item in dist.visaList.slice(0, 1)
             include service-card
